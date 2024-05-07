@@ -9,13 +9,13 @@ const Admincreatequiz = () => {
           <InputBox label={'Question'} placeholder={'Write your question here!'}/>
           <InputBox onChange={(e)=>setFile(e.target.files[0])} label={"UPLOAD HERE"}type="file" accept='image/*'/>
           <div className=' bg-slate-300 mx-28 my-6 px-4 py-4 rounded-lg border-2  shadow-2xl flex flex-wrap w-172 h-full'>
-            <InputBox label={'Choices'} placeholder={'Write your choices here!'}/>
+            <InputBox label={'Choice1'} placeholder={'Write your choices here!'}/>
             <InputBox onChange={(e)=>setFile(e.target.files[0])} label={"UPLOAD HERE"}type="file" accept='image/*'/>
-            <InputBox label={'Choices'} placeholder={'Write your choices here!'}/>
+            <InputBox label={'Choice2'} placeholder={'Write your choices here!'}/>
             <InputBox onChange={(e)=>setFile(e.target.files[0])} label={"UPLOAD HERE"}type="file" accept='image/*'/>
-            <InputBox label={'Choices'} placeholder={'Write your choices here!'}/>
+            <InputBox label={'Choice3'} placeholder={'Write your choices here!'}/>
             <InputBox onChange={(e)=>setFile(e.target.files[0])} label={"UPLOAD HERE"}type="file" accept='image/*'/>
-            <InputBox label={'Choices'} placeholder={'Write your choices here!'}/>
+            <InputBox label={'Choice4'} placeholder={'Write your choices here!'}/>
             <InputBox onChange={(e)=>setFile(e.target.files[0])} label={"UPLOAD HERE"}type="file" accept='image/*'/>
 
           </div>

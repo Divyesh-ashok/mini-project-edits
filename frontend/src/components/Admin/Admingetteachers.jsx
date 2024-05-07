@@ -27,16 +27,22 @@ export default function Admingetteachers() {
     <>
       <Apppbar/>
       <div className='py-24'>
+        <div className=" border-black w-fit inline-flex gap-32">
+                  <h1 className=' text-xl w-1/5'>{"Name:"}</h1>
+                  <h1 className='text-xl w-1/5'>{"Email:"}</h1>
+                  <h1 className='text-xl w-1/5'>{"Joindate:"}</h1>
+                  <h1 className='text-xl w-1/5'>{"subject: "}</h1>
+      </div>
     {
       teacher.map((teacher)=>(
             <div className="flex py-4 space-x-4 justify-center">
               <div className="bg-slate-200 w-full inline-flex gap-4">
-                <h1 className=' text-xl'>{"Name:"+teacher.firstname+" "+teacher.lastname}</h1>
-                <h1 className='text-xl'>{"Email:"+teacher.email}</h1>
-                <h1 className='text-xl'>{"Joindate:"+teacher.joindate}</h1>
-                <h1 className='text-xl'>{"subject: "+teacher.subject}</h1>
-                <div className="w-80 py-2">
-                  <Button label={"DELETE"} onClick={(e)=>{deleteteacher(teacher._id)}}/>
+                <h1 className='text-xl w-1/5'>{teacher.firstname+" "+teacher.lastname}</h1>
+                <h1 className='text-xl w-1/5'>{teacher.email}</h1>
+                <h1 className='text-xl w-1/5'>{teacher.joindate}</h1>
+                <h1 className='text-xl w-1/5'>{+teacher.subject}</h1>
+                <div className="w-full py-2 flex justify-end">
+                  <button label={"DELETE"} onClick={(e)=>{deleteteacher(teacher._id)}} className=' w-20 text-white bg-black hover:bg-slate-800 rounded-md py-1.5 mx-4 mb-2'>DELETE</button>
                 </div>
               </div>
 

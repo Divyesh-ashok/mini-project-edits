@@ -47,7 +47,8 @@ function App() {
         <Route path="/teacherstudymaterials" element={<Teacherstudymaterial/>}/>
         <Route path="/admin/newevent" element={<Admincreateevent/>}/>
         <Route path="/student/events" element={<Studentevent/>}/>
-        <Route path="/admin/newquiz" element={<Admincreatequiz/>}/>
+        <Route path="/admin/newquiz" element={<Admincreatequiz/>
+      }/>
        </Routes>
        </BrowserRouter>
     </div>
